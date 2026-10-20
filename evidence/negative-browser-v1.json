@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-20T07:48:20.049Z",
+  "results": [
+    {
+      "id": "F10-la-mano-en-orden-inverso",
+      "rejected": true,
+      "reason": "Conserva los argumentos originales: devuelve una lista nueva."
+    },
+    {
+      "id": "F04-una-puja-v-lida",
+      "rejected": true,
+      "reason": "Captura ValueError de forma específica en esta misión."
+    },
+    {
+      "id": "F04-repartir-por-filas",
+      "rejected": true,
+      "reason": "Los cuerpos de los bucles deben ejecutarse con los datos de este caso."
+    },
+    {
+      "id": "F13-M01",
+      "rejected": true,
+      "reason": "Falta el archivo referencia_linea.png."
+    },
+    {
+      "id": "SQL-un-cambio-limitado",
+      "rejected": true,
+      "reason": "Output mismatch"
+    },
+    {
+      "id": "SQL-retirar-una-carta-sin-due-o",
+      "rejected": true,
+      "reason": "Output mismatch"
+    },
+    {
+      "id": "SQL-costes-altos",
+      "rejected": true,
+      "reason": "Output mismatch"
+    },
+    {
+      "id": "SQL-tipos-distintos",
+      "rejected": true,
+      "reason": "Output mismatch"
+    },
+    {
+      "id": "SQL-una-subconsulta",
+      "rejected": true,
+      "reason": "Output mismatch"
+    }
+  ]
+}
