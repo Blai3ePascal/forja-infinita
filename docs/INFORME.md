@@ -1,37 +1,41 @@
-# Informe de verificación
+# Verificación de la edición 1.1
 
-Pascal & Sara · 20 de octubre de 2026 · Beta 1.0
+Pascal & Sara · 20 de octubre de 2026 · 1.1.0-beta.2
 
-## Resultado
+## Cambios
 
-Se ejecutaron las soluciones de las **227 misiones** en Microsoft Edge/Chromium, con **227 aprobadas y 0 fallos**, sobre trabajadores ofuscados y CPython 3.12 / Pyodide 0.27.7 y SQLite / sql.js. Cada misión utiliza todos sus casos de prueba declarados; el número de misiones no equivale al número de casos ni al de ejercicios independientes de escritura.
+- El emblema explica +1 moneda, su uso y su carácter opcional. Hay respuesta escrita al pulsarlo.
+- Anterior y Siguiente recorren el catálogo en orden; Volver y el historial del navegador conservan destinos y borradores.
+- Cada una de las 45 unidades tiene idea central, pasos, error frecuente, variante de transferencia y preguntas de revisión.
+- Los 90 cuadernos incluyen portada, índice, predicción, preparación plegada, código, resultados y reflexión. SQL muestra la consulta editable en varias líneas y comprueba los casos.
+- Las opciones se agrupan como Lectura, imagen y sonido: texto hasta 200 %, espaciado, controles grandes, contraste, paletas, lectura en voz alta, volumen, movimiento y mesa de estudio.
+- Gremio Byte usa un paisaje de aventura con niebla y partículas; Forja Infinita, siluetas de taller y cinta de producción. El movimiento se puede desactivar y respeta la preferencia del sistema.
+- Se corrigieron 34 actividades Python que incluían toda la solución como código inicial; ahora tienen una parte conceptual pendiente. Las propuestas completas siguen bajo petición.
+- Se corrigió la descripción de F16: inspeccionar bytecode no equivale a ejecutar ensamblador nativo.
+- El trazador Python cuenta líneas sin leer variables locales: se evita una interferencia observada en comprensiones al preparar imágenes.
 
-Se realizaron dos pasadas completas del banco durante la reconstrucción. La segunda incorpora los cambios del catálogo y del empaquetado del motor. La evidencia final está en `evidence/catalog-browser-v1.json`.
+## Pruebas ejecutadas
 
-## Interacción
+| Comprobación | Resultado |
+|---|---|
+| Soluciones de este juego en motores reales y distribución ofuscada | 227/227 |
+| Navegación anterior, siguiente, volver, adelante y salto desde mapa | Correcta; borradores conservados |
+| Preferencias, recarga, mesa de estudio y movimiento reducido | Correctas |
+| Móvil, texto al 200 % y controles grandes | Sin desbordamiento horizontal detectado |
+| Axe: pantalla inicial, cuaderno, opciones y contraste al 200 % | Sin infracciones detectadas de las reglas WCAG 2 A/AA y 2.1 AA seleccionadas |
+| Progresión, recompensas, inventario, exportar/importar, detener ejecución | Correctos |
+| Estructura de los 90 cuadernos y sintaxis de 443 celdas Python de soluciones | Correctas |
 
-Pruebas automatizadas de clic, pistas, propuestas explicadas, ejecución real, recompensa única, representación del resultado, inventario, exportación, importación, preferencias, búsqueda de misiones, detención y persistencia de borradores.
+Se ejecutaron las celdas reales de las 227 actividades de los cuadernos de soluciones Python/SQL mediante CPython 3.12/Pyodide, incluidas las consultas SQLite y preparación de imágenes. Las 227 terminaron con el resultado o las comprobaciones previstos. No fue una ejecución de la interfaz de Colab.
 
-El alias con sintaxis HTML se presenta como texto. La importación rechaza esquemas ajenos, límites incorrectos y claves peligrosas. El código de práctica se ejecuta en trabajadores que se pueden terminar.
+Los 34 códigos iniciales incompletos se rechazaron. También se rechazaron nueve regresiones conocidas: mutación de argumentos, captura genérica, bucles inactivos, ausencia de gráfico, modificaciones destructivas y consultas basadas en constantes.
 
-Escritorio: 1440 px. Móvil: 390 px. Sin desbordamiento horizontal detectado, también con el texto al 200 %. La revisión con axe-core de las pantallas iniciales no detectó infracciones de las reglas WCAG A/AA seleccionadas. Esto no sustituye una auditoría manual con lectores de pantalla ni pruebas en todos los navegadores.
+## Evidencias y límites
 
-Se inspeccionaron capturas reales de escritorio y móvil. El informe automatizado de uso está en `evidence/ui-browser-v1.json`.
+Los JSON de evidence conservan los resultados por misión y comprobación. Las inspecciones visuales incluyen escritorio, móvil, cuaderno del juego y representaciones HTML de cuatro cuadernos de trabajo.
 
-## Material docente
+Una herramienta automática no certifica toda la experiencia de uso. La lectura en voz alta depende del soporte y las voces del navegador; el texto permanece disponible.
 
-44 cuadernos por bloque, en versiones de práctica y propuestas explicadas, acompañan este juego. En la entrega conjunta se validaron la estructura JSON de 90 cuadernos y la sintaxis de 446 celdas Python de soluciones. Las celdas C y SQL se apoyan en las soluciones comprobadas en los motores; no se afirma una ejecución completa de los cuadernos dentro de Colab.
+Completar un catálogo no demuestra aprendizaje generalizable ni equivalencia con una guía oficial no aportada. La [matriz de cobertura y los ocho retos integradores](APRENDIZAJE.md) distinguen resultados comprobables de explicaciones que requieren revisión docente. Ensamblador nativo, justificación de modelos E/R e interpretación de gráficos necesitan las prácticas o la revisión indicadas allí.
 
-Los originales se conservaron. Las diapositivas y PDF originales no se han remaquetado en esta reconstrucción.
-
-## Límites
-
-Es una beta comprobada, no una garantía de ausencia absoluta de errores. Muchas actividades del banco son lecturas con datos fijos. Las pruebas finitas no demuestran generalización a toda entrada, ni impiden respuestas artificiosas.
-
-El motor C usa punteros de 32 bits; los tiempos corresponden a la emulación. El contexto del navegador y los dispositivos pueden cambiar el rendimiento. No se verificó Safari ni Firefox.
-
-La equivalencia exacta con la guía y los criterios UAX 2026/27 queda pendiente de esa documentación vigente. E/R, interpretación de gráficos y justificaciones requieren valoración docente.
-
-## Pruebas negativas
-
-Nueve contraejemplos que fallaban en los originales se rechazan: mutación de argumentos, captura genérica de excepciones, bucles no ejecutados, figura ausente, dos modificaciones SQL destructivas y tres consultas que codificaban resultados fijos. Evidencia: `evidence/negative-browser-v1.json`.
+Las diapositivas y PDF originales se conservan; esta entrega mejora los juegos y los cuadernos complementarios. El código propio de publicación está ofuscado; la copia editable se entrega separada.

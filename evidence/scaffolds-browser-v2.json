@@ -1,0 +1,179 @@
+{
+  "date": "2026-10-20T08:36:15.771Z",
+  "browser": "Microsoft Edge / Chromium",
+  "build": "obfuscated",
+  "count": 34,
+  "passed": 34,
+  "results": [
+    {
+      "id": "F10-A01",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F10-A02",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F10-A03",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F10-A04",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F11-A01",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F11-A02",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F11-A03",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F11-A04",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F11-A05",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F12-A01",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F12-A02",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F12-A03",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F12-A04",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F12-A05",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F13-A01",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F13-A02",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F13-A03",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F13-A04",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F13-A05",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F13-A06",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F14-A01",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F14-A02",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F14-A03",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F15-A01",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F15-A02",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F15-A03",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F15-A04",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F16-A01",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F16-A02",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F16-A03",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F16-A04",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F17-A01",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F17-A02",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F17-A03",
+      "ok": true,
+      "details": []
+    }
+  ]
+}
