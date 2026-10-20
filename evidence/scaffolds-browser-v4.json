@@ -1,0 +1,758 @@
+{
+  "date": "2026-10-20T10:09:28.130Z",
+  "browser": "Microsoft Edge / Chromium",
+  "build": "obfuscated",
+  "count": 145,
+  "passed": 145,
+  "results": [
+    {
+      "id": "F01-E02",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F01-E03",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F01-E04",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F01-E06",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F01-E07",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F01-E08",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F02-E02",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F02-E03",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F02-E04",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F02-E06",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F02-E07",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F02-E08",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F03-E02",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F03-E03",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F03-E04",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F03-E06",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F03-E07",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F03-E08",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F03-E10",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F03-E11",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F03-E12",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F11-A01",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F11-A02",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F11-A03",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F11-A04",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F11-A05",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F-MET-ordenar-el-intercambio-1",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F-MET-ordenar-el-intercambio-2",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F-MET-ordenar-el-intercambio-3",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F-MET-ordenar-el-intercambio-4",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F04-E02",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F04-E03",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F04-E04",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F04-E06",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F04-E07",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F04-E08",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F04-E10",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F04-E11",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F04-E12",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F04-E14",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F04-E15",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F04-E16",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F04-E18",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F04-E19",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F04-E20",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F04-E22",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F04-E23",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F04-E24",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F04-E26",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F04-E27",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F04-E28",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F04-E30",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F04-E31",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F04-E32",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F10-A01",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F10-A02",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F10-A03",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F10-A04",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F04-valorar-una-carta",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F04-repartir-por-filas",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F10-la-mano-en-orden-inverso",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F04-una-puja-v-lida",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F05A-E02",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F05A-E03",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F05A-E04",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F05A-E06",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F05A-E07",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F05A-E08",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F06-E02",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F06-E03",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F06-E04",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F06-E06",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F06-E07",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F06-E08",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F12-A01",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F12-A02",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F12-A03",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F12-A04",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F12-A05",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F14-A01",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F14-A02",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F14-A03",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F05B-E02",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F05B-E03",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F05B-E04",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F05B-E06",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F05B-E07",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F05B-E08",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F13-A01",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F13-A02",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F13-A03",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F13-A04",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F13-A05",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F13-A06",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F07-E02",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F07-E03",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F07-E04",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F07-E06",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F07-E07",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F07-E08",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F08-E02",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F08-E03",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F08-E04",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F08-E06",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F08-E07",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F08-E08",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F08-DISENO-1",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F08-DISENO-2",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F09-E02",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F09-E03",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F09-E04",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F09-E06",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F09-E07",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F09-E08",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F09-E10",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F09-E11",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F09-E12",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F15-A01",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F15-A02",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "F15-A03",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "SQL-nombres-del-cat-logo",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "SQL-costes-altos",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "SQL-un-tipo-concreto",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "SQL-contar-el-cat-logo",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "SQL-tipos-distintos",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "SQL-ordenar-por-coste",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "SQL-coste-medio",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "SQL-resumen-por-tipo",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "SQL-grupos-con-varias-cartas",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "SQL-nombre-y-propietario",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "SQL-personas-sin-colecci-n",
+      "ok": true,
+      "details": [
+        {
+          "case": 2,
+          "actual": [],
+          "expected": [],
+          "stderr": "",
+          "analysis": {
+            "ok": true,
+            "depth": 0,
+            "notes": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "SQL-contar-tambi-n-los-ceros",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "SQL-sumar-copias",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "SQL-nombres-con-letra-a",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "SQL-un-intervalo",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "SQL-el-mayor-coste",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "SQL-cartas-que-nadie-tiene",
+      "ok": true,
+      "details": [
+        {
+          "case": 2,
+          "actual": [],
+          "expected": [],
+          "stderr": "",
+          "analysis": {
+            "ok": true,
+            "depth": 0,
+            "notes": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "SQL-dos-tipos-posibles",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "SQL-una-subconsulta",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "SQL-mayor-colecci-n",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "SQL-alta-de-una-carta",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "SQL-un-cambio-limitado",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "SQL-retirar-una-carta-sin-due-o",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "SQL-deshacer-antes-de-confirmar",
+      "ok": true,
+      "details": []
+    },
+    {
+      "id": "SQL-a-adir-copias",
+      "ok": true,
+      "details": []
+    }
+  ]
+}

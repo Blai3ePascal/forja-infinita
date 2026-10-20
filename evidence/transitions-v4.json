@@ -1,0 +1,36 @@
+[
+  {
+    "slug": "forja-infinita",
+    "engine": "python",
+    "ok": true,
+    "errors": [],
+    "checks": [
+      "Tab cannot mutate readonly code",
+      "Shift+Tab exits",
+      "next while running blocked",
+      "stop cancels without reward",
+      "syntax error returns diagnostic",
+      "recovery after stop/error",
+      "repeat does not duplicate reward",
+      "history cancels pending run",
+      "focus mode retains menu"
+    ]
+  },
+  {
+    "slug": "forja-infinita",
+    "engine": "sql",
+    "ok": true,
+    "errors": [],
+    "checks": [
+      "Tab cannot mutate readonly code",
+      "Shift+Tab exits",
+      "next while running blocked",
+      "stop cancels without reward",
+      "syntax error returns diagnostic",
+      "recovery after stop/error",
+      "repeat does not duplicate reward",
+      "history cancels pending run",
+      "focus mode retains menu"
+    ]
+  }
+]

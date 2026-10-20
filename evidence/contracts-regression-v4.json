@@ -1,0 +1,299 @@
+{
+  "date": "2026-10-20T10:09:33.304Z",
+  "count": 13,
+  "passed": 13,
+  "results": [
+    {
+      "mission": "F07-E02",
+      "slug": "forja-infinita",
+      "code": "import sqlite3\n\nwith sqlite3.connect(\":memory:\") as db:\n    db.execute((\"CREATE TABLE equipo(id INTEGER, \" \"nombre TEXT NOT NULL)\"))\n    db.execute(\"INSERT INTO equipo VALUES(1, 'Azul')\")\n    db.execute(\"INSERT INTO equipo VALUES(1, 'Verde')\")\n    print(db.execute(\"SELECT nombre FROM equipo ORDER BY id\").fetchall())\n",
+      "reason": "Quitar PK permite dos equipos con id1 y los mismos nombres de salida.",
+      "shouldPass": false,
+      "accepted": false,
+      "ok": true,
+      "details": [
+        {
+          "exitCode": 0,
+          "analysis": {
+            "ok": false,
+            "notes": [
+              "Revisa la base de datos: además de la salida, se comprueban las filas, claves y relaciones del enunciado."
+            ],
+            "depth": 0
+          },
+          "stderr": "",
+          "artifactErrors": []
+        }
+      ]
+    },
+    {
+      "mission": "F07-E04",
+      "slug": "forja-infinita",
+      "code": "import sqlite3\n\nwith sqlite3.connect(\":memory:\") as db:\n    db.execute((\"CREATE TABLE equipo(id INTEGER PRIMARY KEY, \" \"nombre TEXT NOT NULL)\"))\n    db.execute(\"INSERT INTO equipo VALUES(1, 'Azul')\")\n    db.execute(\"INSERT INTO equipo VALUES(2, 'Verde')\")\n    db.execute(\"INSERT INTO equipo VALUES(4, 'Rojo')\")\n    print(db.execute(\"SELECT nombre FROM equipo ORDER BY id\").fetchall())\n",
+      "reason": "Rojo queda con id4 en lugar del3 requerido; nombres impresos iguales.",
+      "shouldPass": false,
+      "accepted": false,
+      "ok": true,
+      "details": [
+        {
+          "exitCode": 0,
+          "analysis": {
+            "ok": false,
+            "notes": [
+              "Revisa la base de datos: además de la salida, se comprueban las filas, claves y relaciones del enunciado."
+            ],
+            "depth": 0
+          },
+          "stderr": "",
+          "artifactErrors": []
+        }
+      ]
+    },
+    {
+      "mission": "F08-E02",
+      "slug": "forja-infinita",
+      "code": "import sqlite3\n\nwith sqlite3.connect(\":memory:\") as db:\n    db.execute(\n        (\n            \"CREATE TABLE matricula(persona INTEGER NOT \"\n            \"NULL, curso TEXT NOT NULL, periodo TEXT NOT \"\n            \"NULL)\"\n        )\n    )\n    db.execute((\"INSERT INTO matricula VALUES(1, 'Python', \" \"'2026')\"))\n    db.execute((\"INSERT INTO matricula VALUES(1, 'Python', \" \"'2027')\"))\n    print(db.execute(\"SELECT COUNT(*) FROM matricula\").fetchone()[0])\n",
+      "reason": "El count correcto no protege unicidad de persona/curso/periodo sin PK.",
+      "shouldPass": false,
+      "accepted": false,
+      "ok": true,
+      "details": [
+        {
+          "exitCode": 0,
+          "analysis": {
+            "ok": false,
+            "notes": [
+              "Revisa la base de datos: además de la salida, se comprueban las filas, claves y relaciones del enunciado."
+            ],
+            "depth": 0
+          },
+          "stderr": "",
+          "artifactErrors": []
+        }
+      ]
+    },
+    {
+      "mission": "F08-E04",
+      "slug": "forja-infinita",
+      "code": "import sqlite3\n\nwith sqlite3.connect(\":memory:\") as db:\n    db.execute(\n        (\n            \"CREATE TABLE matricula(persona INTEGER NOT \"\n            \"NULL, curso TEXT NOT NULL, periodo TEXT NOT \"\n            \"NULL, PRIMARY KEY(persona, curso, periodo))\"\n        )\n    )\n    db.execute((\"INSERT INTO matricula VALUES(1, 'Python', \" \"'2026')\"))\n    db.execute((\"INSERT INTO matricula VALUES(1, 'Python', \" \"'2027')\"))\n    db.execute((\"INSERT INTO matricula VALUES(3, 'Python', \" \"'2026')\"))\n    print(db.execute(\"SELECT COUNT(*) FROM matricula\").fetchone()[0])\n",
+      "reason": "La tercera fila es persona3 en vez de2; count sigue siendo3.",
+      "shouldPass": false,
+      "accepted": false,
+      "ok": true,
+      "details": [
+        {
+          "exitCode": 0,
+          "analysis": {
+            "ok": false,
+            "notes": [
+              "Revisa la base de datos: además de la salida, se comprueban las filas, claves y relaciones del enunciado."
+            ],
+            "depth": 0
+          },
+          "stderr": "",
+          "artifactErrors": []
+        }
+      ]
+    },
+    {
+      "mission": "F08-E08",
+      "slug": "forja-infinita",
+      "code": "import sqlite3\n\nwith sqlite3.connect(\":memory:\") as db:\n    db.execute(\"CREATE TABLE sala(id INTEGER PRIMARY KEY)\")\n    db.execute(\n        (\n            \"CREATE TABLE equipo(id INTEGER PRIMARY KEY, \"\n            \"sala_id INTEGER NOT NULL REFERENCES \"\n            \"sala(id))\"\n        )\n    )\n    db.execute(\"INSERT INTO sala VALUES(4)\")\n    db.execute(\"INSERT INTO equipo VALUES(1, 9)\")\n    print(db.execute(\"SELECT sala_id FROM equipo\").fetchone()[0])\n",
+      "reason": "Equipo apunta a sala9 inexistente con foreign_keys desactivadas; salida sigue9.",
+      "shouldPass": false,
+      "accepted": false,
+      "ok": true,
+      "details": [
+        {
+          "exitCode": 0,
+          "analysis": {
+            "ok": false,
+            "notes": [
+              "Revisa la base de datos: además de la salida, se comprueban las filas, claves y relaciones del enunciado."
+            ],
+            "depth": 0
+          },
+          "stderr": "",
+          "artifactErrors": []
+        }
+      ]
+    },
+    {
+      "mission": "F02-E04",
+      "slug": "forja-infinita",
+      "code": "numero = 27\nprint(numero)\nprint(f\"{numero:b}\")\nprint(f\"{numero:X}\")\n",
+      "reason": "Representación correcta mediante f-strings, técnica propia del lenguaje sin format explícito.",
+      "shouldPass": true,
+      "accepted": true,
+      "ok": true,
+      "details": [
+        {
+          "exitCode": 0,
+          "analysis": {
+            "ok": true,
+            "notes": [],
+            "depth": 0
+          },
+          "stderr": "",
+          "artifactErrors": []
+        }
+      ]
+    },
+    {
+      "mission": "F02-E08",
+      "slug": "forja-infinita",
+      "code": "texto = \"A\"\nprint(len(texto))\nprint(len(bytes(texto, \"utf-8\")))\nprint(2**8)\n",
+      "reason": "bytes(texto,encoding) realiza la misma codificación UTF-8 pedida.",
+      "shouldPass": true,
+      "accepted": true,
+      "ok": true,
+      "details": [
+        {
+          "exitCode": 0,
+          "analysis": {
+            "ok": true,
+            "notes": [],
+            "depth": 0
+          },
+          "stderr": "",
+          "artifactErrors": []
+        }
+      ]
+    },
+    {
+      "mission": "F07-E04",
+      "code": "import sqlite3\n\nwith sqlite3.connect(\":memory:\") as db:\n    db.execute((\"CREATE TABLE equipo(id INTEGER PRIMARY KEY, \" \"nombre TEXT NOT NULL)\"))\n    db.execute(\"INSERT INTO equipo VALUES(1, 'Azul')\")\n    db.execute(\"INSERT INTO equipo VALUES(2, 'Verde')\")\n    db.execute(\"INSERT INTO equipo VALUES(3, 'Rojo')\")\n    print(db.execute(\"SELECT nombre FROM equipo ORDER BY id\").fetchall())\n\ndb.close()\n",
+      "shouldPass": true,
+      "reason": "Explicit close must preserve a valid database",
+      "accepted": true,
+      "ok": true,
+      "details": [
+        {
+          "exitCode": 0,
+          "analysis": {
+            "ok": true,
+            "notes": [],
+            "depth": 0
+          },
+          "stderr": "",
+          "artifactErrors": []
+        }
+      ]
+    },
+    {
+      "mission": "F03-E02",
+      "code": "print(\"-4\\n\", end=\"\")\n",
+      "shouldPass": false,
+      "reason": "Literal output does not perform the required learning operation",
+      "accepted": false,
+      "ok": true,
+      "details": [
+        {
+          "exitCode": 0,
+          "analysis": {
+            "ok": false,
+            "notes": [
+              "Requisito: Recorrer o buscar con un bucle que avance; no sustituir el algoritmo por la salida escrita.",
+              "Requisito: mostrar valores calculados a partir de los datos, no toda la respuesta escrita como literales.",
+              "La técnica debe ejecutarse, no quedar en código sin usar: Recorrer o buscar con un bucle que avance; no sustituir el algoritmo por la salida escrita."
+            ],
+            "depth": 0
+          },
+          "stderr": "",
+          "artifactErrors": []
+        }
+      ]
+    },
+    {
+      "mission": "F04-E06",
+      "code": "print(\"Azul 5\\n\", end=\"\")\n",
+      "shouldPass": false,
+      "reason": "Literal output does not perform the required learning operation",
+      "accepted": false,
+      "ok": true,
+      "details": [
+        {
+          "exitCode": 0,
+          "analysis": {
+            "ok": false,
+            "notes": [
+              "Requisito: Crear un objeto y actualizar su estado mediante métodos.",
+              "Requisito: mostrar valores calculados a partir de los datos, no toda la respuesta escrita como literales.",
+              "La técnica debe ejecutarse, no quedar en código sin usar: Crear un objeto y actualizar su estado mediante métodos."
+            ],
+            "depth": 0
+          },
+          "stderr": "",
+          "artifactErrors": []
+        }
+      ]
+    },
+    {
+      "mission": "F05A-E04",
+      "code": "print(\"2\\n10.0\\n5.0\\n\", end=\"\")\n",
+      "shouldPass": false,
+      "reason": "Literal output does not perform the required learning operation",
+      "accepted": false,
+      "ok": true,
+      "details": [
+        {
+          "exitCode": 0,
+          "analysis": {
+            "ok": false,
+            "notes": [
+              "Requisito: trabajar con pandas en esta actividad.",
+              "Requisito: mostrar valores calculados a partir de los datos, no toda la respuesta escrita como literales."
+            ],
+            "depth": 0
+          },
+          "stderr": "",
+          "artifactErrors": []
+        }
+      ]
+    },
+    {
+      "mission": "F12-A02",
+      "code": "print(\"Cuartiles: 4.0 6.0 8.0\\nIQR y limites: 4.0 -2.0 14.0\\nCandidatos: [30.0]\\nCuatro datos: [3.5, 5.0, 6.5]\\n\", end=\"\")\n",
+      "shouldPass": false,
+      "reason": "Literal output does not perform the required learning operation",
+      "accepted": false,
+      "ok": true,
+      "details": [
+        {
+          "exitCode": 0,
+          "analysis": {
+            "ok": false,
+            "notes": [
+              "Requisito: mostrar valores calculados a partir de los datos, no toda la respuesta escrita como literales."
+            ],
+            "depth": 0
+          },
+          "stderr": "",
+          "artifactErrors": []
+        }
+      ]
+    },
+    {
+      "mission": "F14-A01",
+      "code": "print(\"Validas: [('1', 8.0), ('5', 6.0)]\\nRechazadas: [(3, '2', 'ausente'), (4, '3', 'no numerico'), (5, '4', 'fuera de rango'), (7, '6', 'no finito')]\\nBalance: 2 + 4 = 6\\n\", end=\"\")\n",
+      "shouldPass": false,
+      "reason": "Literal output does not perform the required learning operation",
+      "accepted": false,
+      "ok": true,
+      "details": [
+        {
+          "exitCode": 1,
+          "analysis": {
+            "ok": false,
+            "notes": [
+              "Requisito: Leer o escribir los datos mediante el módulo csv o las herramientas de pandas.",
+              "Requisito: mostrar valores calculados a partir de los datos, no toda la respuesta escrita como literales."
+            ],
+            "depth": 0
+          },
+          "stderr": "Requisito: Leer o escribir los datos mediante el módulo csv o las herramientas de pandas.\nRequisito: mostrar valores calculados a partir de los datos, no toda la respuesta escrita como literales."
+        }
+      ]
+    }
+  ]
+}
